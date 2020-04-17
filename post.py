@@ -5,7 +5,7 @@ import slack # module is called slackclient
 
 OATH = 'MY_OATH_TOKEN'
 
-with open("block.json", "rt") as block_f:
+with open("blocks.json", "rt") as block_f:
     data = json.load(block_f)
 
 client = slack.WebClient(token=OATH)
